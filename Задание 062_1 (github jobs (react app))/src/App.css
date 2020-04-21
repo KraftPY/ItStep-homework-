@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.content{
+  width: 80%;
+  margin: 10px auto;
+}
+
+.content> table{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table, td, th{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+form> *{
+  margin: 5px;
+}

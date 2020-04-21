@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.list{
+  text-align: left;
+  width: 80%;
+  margin: 15px auto;
+}
+
+.list> li{
+  padding: 5px;
+}
