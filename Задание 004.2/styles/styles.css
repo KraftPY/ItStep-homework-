@@ -1,0 +1,117 @@
+body{
+    font-family: sans-serif;
+}
+
+.block_1-2{
+    width: 420px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.block_3{
+    width: 900px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+/*-----------------------------First task-----------------------------*/
+
+.list_ol{
+    color: white;
+    counter-reset: myCounter;
+    padding: 10px;
+    margin: 0;
+    background-color: #ED9EAE;
+    width: 400px;
+}
+
+.list_ol li{
+    list-style: none;
+    background-color: #C66376;
+    padding: 5px 0px;
+    margin: 10px;
+}
+
+.list_ol li::before{
+    counter-increment: myCounter;
+    content:counter(myCounter)".";
+    padding: 10px;
+    
+}
+
+.list_ol span{
+    padding: 5px 15px;
+    background-color: #9E354A;
+}
+
+/*-----------------------------Second task-------------------------------*/
+
+.list_ul{
+    padding: 0;
+}
+
+.list_ul li{
+    list-style: none;
+    padding: 10px 40px;
+}
+
+.list_ul li.uncheked::before{
+    content: url(../icons/unchecked_16.png);    
+}
+
+.list_ul li.cheked::before{
+    content: url(../icons/checked_16.png);
+}
+
+.list_ul li.cheked{
+    background-color: #E2E2E2;
+}
+
+.list_ul li.odd{
+    background-color: #A5CCDA;
+}
+
+.list_ul li.even{
+    background-color: #ADD8E6;
+}
+
+
+.list_ul span.text{
+    color: black;
+}
+
+.list_ul span{
+    color: #8B0000;
+    padding-left: 20px;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+/*-----------------------------Third task-------------------------------*/
+
+dl dt{
+    font-style: italic
+}
+
+dl p{
+    margin: 5px;
+}
+    
+dl p.text_1{
+    color: #837C82;
+}
+
+dl p.text_2{
+    color: #2D4EB9;
+}
+
+dl p.text_2::before{
+    content: "synonyms: ";
+    color: black;
+}

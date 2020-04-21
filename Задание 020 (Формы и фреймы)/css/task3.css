@@ -1,0 +1,178 @@
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+form{
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select{
+    border: none;
+    border-bottom: 1px solid rgb(180, 176, 176);
+    line-height: 25px;
+    padding-left: 15px;
+}
+
+.all_data{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px 0px 20px;
+}
+
+.reg_data, .pers_data, .subcribe{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.title{font-size: 23px;}
+
+.user_block, .email_block, .pass_block{
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+}
+
+.pass, .conf_pass{
+    display: flex;
+    flex-direction: row;
+}
+
+.user_pic, .email_pic, .pass_pic, .no_pic{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+}
+
+.no_pic{display: none;}
+.user_pic{background-image: url("../icons/username.png");}
+.email_pic{background-image: url("../icons/email.png");}
+.pass_pic{background-image: url("../icons/pswd.png");}
+
+.user_block input, .email_block input{width: 100%;}
+
+.pass_block{
+    justify-content: space-between;
+}
+
+.pass, .conf_pass {width: 48%;}
+.pass > input, .conf_pass > input{width: 100%;}
+
+.name_block, .male_and_data_block{
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name_block input, .male_and_data_block input,
+ .male_and_data_block select{
+    width: 48%;
+}
+
+select option{
+    width: 150px;
+}
+
+.subcribe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin: 50px 0px 50px 0px;
+    padding-left: 20px;
+}
+
+.submit{
+    line-height: 100px;
+    width: 100%;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.submit button{
+    width: 170px;
+    height: 35px;
+    float: right;
+    background-color: #008B8B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px){
+    form{width: 100%;}
+    
+    .all_data{flex-direction: column;}
+
+    .reg_data, .pers_data, .subcribe, .user_block, .email_block, .pass_block{
+        width: 100%;
+    }
+
+    .reg_data{margin-bottom: 50px;}
+}
+
+@media screen and (max-width: 599px) and (min-width: 300px){
+    form{width: 100%;}
+    
+    .all_data, .pass_block, .name_block, .male_and_data_block{flex-direction: column;}
+
+    .reg_data, .pers_data, .subcribe, .user_block, .email_block{
+        width: 100%;
+    }
+
+    .pass, .conf_pass{width: 100%;}
+    .conf_pass{margin-top: 20px;}
+    .no_pic{display: block;}
+
+    .pass_block, .name_block > input, .male_and_data_block > input, .male_and_data_block > select{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .reg_data{margin-bottom: 50px;}
+}
+
+@media screen and (max-width: 299px){
+    form{width: 300px;}
+
+    .all_data, .pass_block, .name_block, .male_and_data_block{flex-direction: column;}
+
+    .reg_data, .pers_data, .subcribe, .user_block, .email_block{
+        width: 100%;
+    }
+
+    .pass, .conf_pass{width: 100%;}
+    .conf_pass{margin-top: 20px;}
+    .no_pic{display: block;}
+
+    .pass_block, .name_block > input, .male_and_data_block > input, .male_and_data_block > select{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .reg_data{margin-bottom: 50px;}
+}

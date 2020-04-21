@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/Kraft/Downloads/14-arrays-practice_1561915431.html -->
+<html lang="ru-UA"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="author" content="Sotula Nick">
+    <meta name="description" content="Step Dnipro HomeWork Web Course-&gt;JS">
+    <title>DZ-JS-14</title>
+    <style>
+        body {
+            padding: 15px 20px;
+            font-family: sans-serif;
+        }
+        
+        section {
+            margin: 15px;
+            border-left: 15px solid rgb(166, 194, 166);
+            padding-left: 15px;
+        }
+        
+        code {
+            font-size: 150%;
+            text-shadow: 1px 1px 5px dimgrey;
+        }
+        
+        main {
+            width: 600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        h3{
+            font-size: 150%;
+        }
+        
+        .examples{
+            border-collapse: collapse;
+        }
+        
+        .examples td{
+            border: 1px solid green;
+            padding: 7px;
+        }
+        
+        pre{
+            font-family: cursive;
+        }
+
+        h4{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        h4+p{
+            margin-top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Домашнее задание №14</h1>
+
+        <section>
+            <h3>1 - Чемпионат</h3>
+            <p>Создайте веб-приложение, в котором пользователь вводит 10 оценок. Вывести на экран 3 самых больших оценки в порядке убывания и порядковые номера этих элементов</p>
+            <h4>Входные данные:</h4>
+            <p>Числа - целое число от 1 до 100</p>
+            <h4>Выходные данные:</h4>
+            <p>Текст - Результат поиска. Топ 3 оценок и индексы этих оценок в массиве</p>
+            <h4>Примеры:</h4>
+            <details>
+                <summary>Развернуть</summary>
+
+                <table class="examples">
+                    <tbody><tr>
+                        <td>#</td>
+                        <td>IN</td>
+                        <td>OUT</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>10, 44, 3, 54, 34, 99, 100, 44, 34, 80</td>
+                        <td>"Победители: 6: 100 очков, 5: 99 очков, 9: 80 очков"</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10, -44, 3, 54, 34, 99, 100, 44, 34, 80</td>
+                        <td>"Ошибка в веденных данных"</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>10, "одинадцать", 3, 54, 34, "шесть", 100, 44, 34, 80</td>
+                        <td>"Ошибка в веденных данных"</td>
+                    </tr>
+                </tbody></table>
+            </details>
+        </section>
+        <section>
+            <h3>2 - Фокус</h3>
+            <p>Создайте веб-приложение, в котором есть двумерный массив карт 13 на 4(4 масти карт от 2 до туза). Выведите в консоль случайную карту из массива используя <code>Math.random()</code>
+            </p>
+            <h4>Входные данные:</h4>
+            <h4>Выходные данные:</h4>
+            <p>Строка - Случайная карта</p>
+            <h4>Примеры:</h4>
+            <details>
+                <summary>Развернуть</summary>
+
+                <table class="examples">
+                    <tbody><tr>
+                        <td>#</td>
+                        <td>IN</td>
+                        <td>OUT</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td>2♠</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td>Q♦</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td>A♣</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td>10♥</td>
+                    </tr>
+                </tbody></table>
+            </details>
+        </section>
+        <section>
+            <h3>3 - Опять Саймон.</h3>
+            <p>Саймон написал код. Саймон уверен, что код в порядке. Но код не работает. Исправь ошибки, допущенные Саймоном.</p>
+            <h4>Входные данные:</h4>
+            <p>Строка - имя игрока</p>
+            <h4>Выходные данные:</h4>
+            <p>Текст - Решение NPC</p>
+            <h4>Примеры:</h4>
+            <details>
+                <summary>Развернуть</summary>
+                   
+                <table class="examples">
+                    <tbody><tr>
+                        <td>#</td>
+                        <td>IN</td>
+                        <td>OUT</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>"Шип"</td>
+                        <td>"Подозрительное у тебя имя, странник. Дам-ка я тебе задание на убийство крыс в канализации." </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>"Придурок"</td>
+                        <td>"Отличное имя, странник. Вот тебе квест на убийство дракона."</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>"Победитель демонов"</td>
+                        <td>"Отличное имя, странник. Вот тебе квест на убийство дракона."</td>
+                    </tr>
+                </tbody></table>
+            </details>
+            <h4>Код Саймона:</h4>
+            <details>
+                    <summary>Развернуть код</summary>
+            <pre>let name = prompt('Введи свое имя, странник'),
+		letters = ["ш", "щ", "ч", "ж"],
+		nameLen = name.length;
+		isBadName = false;
+		replics = ['Подозрительное у тебя имя, странник. 
+		Дам-ка я тебе задание на убийство крыс в канализации.', 
+		'Отличное имя, странник. Вот тебе квест на убийство дракона.'];
+
+for(let i = 3; i &lt; nameLen; i++){
+	if(letters.indexOf(name[i].toLowerCase()) &gt; -1){
+		isBadName = true;
+		break;
+	}
+}
+
+if(isBadName === "true"){
+	console.log(replics[0]);
+}else{
+	console.log(replics[1]);
+}
+            </pre>
+            </details>
+
+        </section>
+        <h3>Формат работы</h3>
+        <ul>
+            <li>Файлы  с первым заданием - <ins>champ.html</ins>  <ins>champ.js</ins></li>
+            <li>Файлы со вторым заданием - <ins>focus.html</ins>  <ins>focus.js</ins></li>
+            <li>Файлы со третим заданием - <ins>simon.html</ins>  <ins>simonApp.js</ins></li>
+        </ul>
+    </main>
+
+
+</body></html>

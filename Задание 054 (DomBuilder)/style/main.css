@@ -1,0 +1,15 @@
+#main{
+    margin: 100px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.container{background-color: honeydew;}
+
+#p1{color: red;}
+
+#p2{color: green;}
+
+#p3{color: blue;}
+
+.text{text-align: center;}

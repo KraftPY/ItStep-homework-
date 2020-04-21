@@ -1,0 +1,104 @@
+*{box-sizing: border-box;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    position: fixed;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #008B8B;
+    position: fixed;
+    top: 20px;
+}
+
+.h_title{
+    color: white;
+    margin-left: 20px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.wrap{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #019E9E;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 80px;
+    overflow: auto;
+}
+
+.task_boards{
+    min-width: 400px;
+    min-height: 200px;
+    height: calc(100vh - 140px);
+    background-color: #DCDCDC;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.task_title{font-weight: bold;}
+
+.task{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icons div:nth-child(1n+2){
+    margin-left: 15px;
+}
+
+.justify, .attach, .checkbox, .comments{
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+}
+
+.justify{background-image: url("../icons/justify_26.png");}
+.attach{background-image: url("../icons/attach_26.png");}
+.checkbox{background-image: url("../icons/checkbox_26.png");}
+.comments{background-image: url("../icons/comments_26.png");}
+.avatar{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    flex: 1 1 50px;
+}
+
+.ava1{background-image: url("../icons/avatar_1.png");}
+.ava2{background-image: url("../icons/avatar_2.png");}
+.ava3{background-image: url("../icons/avatar_3.png");}
+.ava4{background-image: url("../icons/avatar_4.png");}

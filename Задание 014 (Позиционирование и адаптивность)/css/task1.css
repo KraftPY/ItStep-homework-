@@ -1,0 +1,90 @@
+@import "reset.css";
+
+body{
+    background-color: #014242;
+    font-family: sans-serif;
+}
+
+div.path{width: 160px;}
+
+
+div.path, .title{color: #9B9B93;}
+
+div.article{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 50px 0px;
+    min-width: 520px;
+}
+
+.a_text{color: white;}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 601px){
+    body{padding: 0px 0 0 30px;}
+
+    div.path{
+        margin-top: 80px;
+        font-size: 18px;
+    }
+
+    img{
+        width: 85px;
+        height: 85px;
+    }
+
+    .pic{
+        float: left;
+        margin-right: 45px;
+        padding: 20px 0px;
+    }
+    
+    div.author{width: 500px;}
+
+    .info{
+        display: inline-block;
+        margin: 0px 30px;
+        padding: 12px 0px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+ 
+    .size{width: 120px;}
+}
+
+@media screen and (min-width: 601px){
+    body{padding: 0px 0 0 60px;}
+
+    div.path{
+        margin-top: 80px;
+        font-size: 16px;
+    }
+
+    img{
+        width: 54px;
+        height: 54px;
+    }
+
+    div.author{width: 599px;}
+
+    .pic{
+        float: left;
+        margin-right: 15px;
+        padding: 4px 0px;
+    }
+    
+    div.author .info{
+        display: inline-block;
+        margin: 0px 10px;
+        padding: 12px 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <ul class="msg_list"></ul>
+    <hr size="5px" color="burlywood" />
+    <div class="send_msg_block">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <label for="text">Message</label>
+      <textarea name="text" id="text" cols="20" rows="5" placeholder="Message text"></textarea>
+      <button class="btn_send">Send</button>
+    </div>
+  </div>
+
+
+
+
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+
+  <script src="/scripts/main.js" type="module"></script>
+</body>
+
+</html>

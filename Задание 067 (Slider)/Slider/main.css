@@ -1,0 +1,50 @@
+.images{
+	position: relative;
+	margin: 0;
+	font-size: 0;
+	top: 0;
+	transition: left 2s;
+  display: flex;
+}
+
+.mini_images{
+	position: relative;
+	margin: 0;
+	font-size: 0;
+	top: 0;
+	transition: left 2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.mini_images> img{
+  width: 180px;
+  padding: 5px;
+  /* filter: blur(2px); */
+}
+
+.slider{
+	width: 800px;
+	height: 480px;
+	overflow: hidden;
+}
+
+.mini_slider{
+  height: 480px;
+  margin-left: 5px;
+}
+
+nav{
+	position: fixed;
+	top: 5; 
+	left: 5;
+	z-index: 1000;
+}
+
+.num_pic{
+  background-color: white;
+}
+
+.conteiner{
+  display: flex;
+}

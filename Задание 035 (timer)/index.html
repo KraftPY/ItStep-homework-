@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашка 035 (Timer)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div action="" class="main">
+        <aside class="blc_left">
+            <input type="text" name="time" id="timer" value="00:00:0">
+            <button class="btn left" id="start">START</button>
+            <button class="btn right" id="stop">STOP</button>
+            <button class="btn left" id="circle">CIRCLE</button>
+            <button class="btn right" id="pause">PAUSE</button>
+        </aside>
+        <aside class="blc_right">
+            <div class="title">&darr; Circle</div>
+        </aside>
+        <div class="text">
+            <p>START -- click ---> таймер стартует. Повторный клик при работающем таймере ничего не сделает</p>
+            <p>STOP -- click ---> Устанавливает время в "00:00:0" и очищает список "Circle"</p>
+            <p>CIRCLE -- click ---> Выводит в список "Circle" текущее значение времени в формате ММ:СС:мС</p>
+            <p>PAUSE -- click ---> останавливает работу таймера. Повторный клик при останавленном таймере ничего не сделает</p>
+        </div>
+        
+
+    </div>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

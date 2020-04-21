@@ -1,0 +1,109 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1.title{
+    width: 800px;
+    margin: 25px auto;
+    border-top: 2px solid black;
+    text-align: center;
+    border-bottom: 1px dotted grey;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+/*-------------------------------Task #1----------------------------*/
+
+.main1{
+    width: 500px;
+    height: 120px;
+    margin: 0 auto;
+    border: 5px solid brown;
+}
+
+.indicator{
+    position: relative;
+    width: 100px;
+    height: 120px;
+    background-color: brown;
+    animation: indic 3s normal infinite steps(5);
+}
+
+@keyframes indic{
+    from {left: 0;}
+    to {left: 500px;}
+}
+
+/*-------------------------------Task #2----------------------------*/
+
+.main2{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+img.heart{
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: all 0.01s linear;
+}
+
+img.heart:hover{
+    filter: grayscale(0%);
+    transform: scale(2);
+    transition: all 5s linear;
+}
+
+/*-------------------------------Task #3----------------------------*/
+
+h2.title_task3{
+    width: 800px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.main3{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;   
+    text-align: center;
+    overflow: hidden;
+}
+
+.main3 img{
+    position: relative;
+    margin: 15px;
+    display: inline-block;
+}
+
+.calc{
+    transform: rotate(-30deg);
+    animation: up 2s normal 1 steps(50); 
+}
+
+.book{
+    transform: rotate(-15deg);
+    animation: up 2s 2.5s normal 1 steps(50) backwards;
+}
+
+.paper{
+    transform: rotate(15deg);
+    animation: up 2s 5s normal 1 steps(50) backwards;
+}
+.pallete{
+    transform: rotate(30deg);
+    animation: up 2s 7.5s normal 1 steps(50) backwards;
+}
+
+.pencil{
+    transform: rotate(90deg);
+    animation: up 2s 10s normal 1 steps(50) backwards;
+}
+
+@keyframes up{
+    from {top: 415px;}
+    to {top:0px;}
+}

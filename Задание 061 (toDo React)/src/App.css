@@ -1,0 +1,49 @@
+.App{
+  width: 500px;
+  margin: 50px auto;
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form> input{
+  width: 60%;
+  margin-right: 10px;
+}
+
+.form> button{
+  width: 15%;
+}
+
+.list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.list> li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn_delete{
+  color: red;
+  border-radius: 50%;
+  border-color: red;
+  float: right;
+}
+
+.text{
+  flex-grow: 1;
+  word-break: break-all;
+  padding: 5px;
+}
+
+.decor_text{
+  text-decoration: line-through;
+}

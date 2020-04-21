@@ -1,0 +1,272 @@
+body{
+    min-width: 800px;
+    max-width: 1000px;
+    margin: 0px auto;
+/*    border: 1px solid darkred;*/
+    font-family: sans-serif;
+}
+
+h1.num_task{
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 1px dotted black;
+    padding: 10px 0px;
+}
+
+a{
+    color: black;
+}
+
+/*************** Task 1 (Food) ******************************/
+
+.block_food{
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px dotted black;
+    border-radius: 40px;
+    margin: 10px 20px;
+    width: 150px;
+    height: 190px;
+    vertical-align: top;
+}
+
+h2.title_food{
+    min-width: 800px;
+    max-width: 1000px;
+    margin: 10px;
+    text-align: center;
+}
+
+span.name_food{
+    line-height: 50px;
+    font-size: 20px;
+}
+
+h3.footer_food{
+    text-align: center;
+    margin-top: 0px;
+}
+
+/*************** Task 2 (Vertical menu) ******************************/
+
+div.main_menu{
+
+}
+
+div.list_menu{
+    width: 300px;
+    height: 80px;
+    background-color: #808080;
+}
+
+div.list_menu:hover{
+    background-color: #5E5E5E;
+}
+
+img.img_menu{
+    margin: 0px 20px 0px 10px;
+    width: 80px;
+}
+
+span.name_menu{
+    color: white;
+    position: absolute;
+    margin: 0;
+    padding: 28px 0px;
+    font-size: 20px;
+}
+
+/*************** Task 3 (Site design) ******************************/
+
+header{
+    background-color: #923158;
+    width: 1000px;
+    height: 80px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 45px;
+
+}
+
+#wrapper{
+    width: 1000px;
+    height: 600px;
+    margin: 15px auto;
+}
+
+#footer3{
+    background-color: #6E1237;
+    width: 1000px;
+    height: 60px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 45px;
+
+}
+
+#menu{
+    background-color: #6E1237;
+    width: 1000px;
+    height: 60px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 45px;
+}
+
+span.text3{
+    color: white;
+    font-size: 20px;
+    
+}
+
+#content_left{
+    width: 235px;
+    height: 525px;
+    float: left;
+}
+
+#content_centr{
+    background-color: #B65B80;
+    width: 600px;
+    height: 525px;
+    float: left;
+    margin: 0px 15px 0px 15px;
+    box-sizing: border-box;
+    padding: 45px 60px 0px 60px;
+}
+
+#content_right{
+    background-color: #B65B80;
+    width: 135px;
+    height: 445px;
+    float: right;
+    box-sizing: border-box;
+    padding: 45px 0px 0px 55px;
+}
+
+#aside_1{
+    background-color: #B65B80;
+    width: 235px;
+    height: 180px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 45px 0px 0px 45px;
+}
+
+#aside_2{
+    background-color: #B65B80;
+    width: 235px;
+    height: 250px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 45px 0px 0px 45px;
+}
+
+#sect_1{
+    background-color: #DB92AF;
+    width: 480px;
+    height: 150px;
+    margin: 15px 0px 15px 0px;
+    box-sizing: border-box;
+    padding: 45px 0px 0px 45px;
+}
+
+#sect_2{
+    background-color: #DB92AF;
+    width: 480px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 45px 0px 0px 45px;
+}
+
+/*************** Task 4 (Footer) ******************************/
+
+#footer4{
+    width: 1000px;
+    height: 250px;
+    margin: 20px auto;
+    background-color: #2A4F6E;
+}
+
+div.block_1{
+    width: 900px;
+    height: 180px;
+    margin: 0px auto;
+    border-bottom: 1px solid lightgrey;
+    
+    
+/*    border: 1px solid white;*/
+}
+
+div.block_1_1{
+    width: 300px;
+    height: 180px;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px 0px 0px 30px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+div.block_social{
+    float: left;
+    box-sizing: border-box;
+    padding: 55px 0px 0px 50px;
+}
+
+div.social{
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 10px;
+    background-size: cover;
+}
+
+.fb{
+    background-image: url(../img/fb_gray.png);
+}
+
+.inst{
+    background-image: url(../img/insta_gray.png);
+}
+
+.youtube{
+    background-image: url(../img/youtube_gray.png);
+}
+
+.fb:hover{
+    background-image: url(../img/fb.png);
+}
+
+.inst:hover{
+    background-image: url(../img/insta.png);
+}
+
+.youtube:hover{
+    background-image: url(../img/youtube.png);
+}
+
+div.copyright{
+    width: 350px;
+    margin: 20px auto;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+div.block_social a{
+    float: left;
+}

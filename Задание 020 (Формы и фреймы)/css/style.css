@@ -1,0 +1,76 @@
+*{box-sizing: border-box;}
+
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+form{
+    width: 600px;
+    height: 380px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-image: url("../icons/moon_flag.png");
+    background-color: #9FCDCD;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position: 405px 160px;
+}
+
+p{
+    color: #466C6F;
+    font-size: 15px;
+}
+
+input{
+    background-color: #A9D2D2;
+    border: none;
+    border-bottom: 1px solid #466C6F;
+    line-height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    color: rgb(51, 50, 50);
+}
+
+.card_title{
+    width: 485px;
+    line-height: 40px;
+    background-color: #DB6423;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+    left: -20px;
+    padding-left: 40px;
+}
+
+.card_data{
+    margin: 55px 0px 0px 20px;
+    width: 360px;
+    /* border: 1px solid; */
+}
+
+
+.date{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.date div{
+    width: 28%;
+}

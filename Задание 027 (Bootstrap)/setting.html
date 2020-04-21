@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание №27 (Bootstrap)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://kit.fontawesome.com/dce1808605.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <a href="index.html" class="navbar-brand">
+            <i class="fas fa-chalkboard-teacher" style="font-size: 45px;"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="homework.html" class="nav-link">Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a href="setting.html" class="nav-link">Setting</a>
+                </li>
+            </ul>
+            <a href="setting.html"><div class="avatar"></div></a>
+        </div>
+        
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center mr-5 ml-5">
+            <div class="col text-center mb-4"><span class="title1">Settings</span></div>
+        </div>
+        <div class="row justify-content-md-center mr-5 ml-5 text-primary ">
+            <div class="col-2 mw_220 text-center title_set rounded-left" style="background-color: #CCE5FF;">AVATAR</div>
+            <div class="col text-center title_set" style="background-color: #CCE5FF;">STUDENT`S INFO</div>
+            <div class="col text-center title_set rounded-right" style="background-color: #CCE5FF;">CHANGE PASSWORD</div>
+        </div>
+        <div class="row justify-content-md-center mr-5 ml-5">
+            <div class="col-2 p-0 mw_220 mt-5 d-flex flex-column align-items-center">
+                <div class="foto"></div>
+                <label for="myfile" class="foto_btn rounded text-center mt-2">Choose photo</label>
+                <input type="file" class="file_foto" id="myfile" name="myfile">
+            </div>
+            <div class="col p-0 text-center mt-5">
+                <input class="form-control col-11" type="text" placeholder="First name">
+                <input class="form-control col-11 mt-3" type="text" placeholder="Last name">
+                <input class="form-control col-11 mt-3" type="email" id="exampleInputEmail1" placeholder="Email">
+                <input class="form-control col-11 mt-3" type="text" placeholder="Phone number">
+                <input class="form-control col-11 mt-3" type="text" placeholder="Address">
+                <input class="form-control col-11 mt-3" type="text" placeholder="FB link">
+                <button class="btn btn-secondary btn-lg btn-block col-11 mt-4" type="button">Save changes</button>
+            </div>
+            <div class="col p-0 text-center mt-5">
+                <input type="password" class="form-control" placeholder="Old password">
+                <input type="password" class="form-control mt-3" placeholder="New password">
+                <input type="password" class="form-control mt-3" placeholder="Repeat password">
+                <button class="btn btn-secondary btn-lg btn-block mt-4" type="button">Change password</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body{
+    background-color: gainsboro;
+    font-size: 17px;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+} 
+
+main{
+    background: white;
+    margin: auto;
+    width: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    text-align: center;
+    font: bold 18px Calibri;
+    margin-top: 0px;
+}
+
+.title-line{
+    width: 450px;
+    height: 1px;
+    border-width: 0px;
+    color: black;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line{
+    width: 600px;
+    height: 1px;
+    border-width: 0px;
+    color: black;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.last-line{
+    width: 600px;
+    height: 2px;
+    border-width: 1px;
+    color: black;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tab{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+ol{
+    font-family: "Segoe UI";
+    margin-left: 110px;
+}
+
+.first-font{
+    font-family: "Segoe UI";
+}
+
+a.link{
+    text-decoration: none;
+    color: black;
+    margin-left: 110px;
+    font-family: "Segoe UI";
+}
+
+h1{
+    text-align: center;
+}
+
+.poem{
+    font-family: Calibri;
+    font-style: italic;
+}
+
+.formula{
+    margin-left: 130px;
+}
+
+.desc-formula{
+    margin-left: 110px;
+}

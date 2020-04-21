@@ -1,0 +1,142 @@
+
+/*---------------- Task 2 ----------------------------------------- */
+.main_modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal{
+    width: 400px;
+    height: 150px;
+    background-color: beige;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 15px;
+    margin: 200px auto;
+}
+
+/*---------------- Task 3 ----------------------------------------- */
+
+.field{
+    width: 1109px;
+    height: 727px;
+    background-image: url('../img/field.JPG');
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 532px;
+    left: 518px;
+    border-radius: 50%;
+    background-image: url('../img/ball.png');
+    background-size: cover;
+    transition: left 0.7s linear, top 0.7s linear;
+}
+
+/*---------------- Task 4 ----------------------------------------- */
+
+.main_lights{
+    display: grid;
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 100px;
+    align-content: center;
+    justify-content: center;
+    width: 600px;
+    height: 250px;
+    background-color: rgb(229, 233, 233);
+}
+
+.lights{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn_light{
+    margin-left: 20px;
+    background-color: #E1E1E1;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.circle_light{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.red{background-color: red;}
+.green{background-color: green;}
+.orange{background-color: orange;}
+.gray{background-color: #8A8A8A;}
+
+/*---------------- Task 5 ----------------------------------------- */
+
+.list{
+    background-color: rgb(226, 216, 216);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    width: 600px;
+}
+
+.list_items{margin: 10px;}
+.selected{background-color: #FFA984;}
+
+/*---------------- Task 6 ----------------------------------------- */
+
+.main_btnHelp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 330px;
+    height: 150px;
+    background-color: khaki;
+    padding: 10px;
+}
+
+.btn_help{
+    position: relative;
+    z-index: 1;
+    height: 60px;
+    width: 120px;
+}
+
+.note_top, .note_bottom{
+    position: fixed;
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    background-color: #FFA984;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    top: 500px;
+}
+
+.note_top::after{
+    content: '';
+    position: relative;
+    border-top: 20px solid #FFA984;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    top: 48px;
+    left: -50px;
+}
+
+.note_bottom::after{
+    content: '';
+    position: relative;
+    border-bottom: 20px solid #FFA984;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    top: -46px;
+    left: -50px;
+}

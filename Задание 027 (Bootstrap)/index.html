@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание №27 (Bootstrap)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://kit.fontawesome.com/dce1808605.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <a href="index.html" class="navbar-brand">
+            <i class="fas fa-chalkboard-teacher" style="font-size: 45px;"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="homework.html" class="nav-link">Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a href="setting.html" class="nav-link">Setting</a>
+                </li>
+            </ul>
+            <a href="setting.html"><div class="avatar"></div></a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row text-center justify-content-md-center">
+            <div class="col-lg-11 border-bottom"><span class="title1">Dakota Greenaway (ABC_123)</span></div>    
+        </div>
+        <div class="row text-center justify-content-md-center">
+            <div class="col-lg-6 col-md-11">
+                <div class="col-12"><span class="title2">News</span></div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="pic1 float-left"></div>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="mb-1">Weekends</h5>
+                            <small>1 days ago</small>
+                        </div>
+                        <p class="mb-1 text-left">Dear students, kindly be informed that there will be no lessons on 5th and 6th April at the Academy due to the holiday.</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Programming consultations</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1 text-left">This Sunday, March 25 at 1:00 pm the Academy will be holding programming consultations first-year students.</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="pic2 float-left"></div>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="mb-1">Meeting with ABC Bank</h5>
+                            <small class="text-muted">20.03.2019</small>
+                        </div>
+                        <p class="mb-1 text-left">On Monday, March 27 at 7:00 pm, we invite you to a besiness meeting with ABC Bank.</p>
+                    </a>
+                    <a href="#" id="hidden_news" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="mb-1">Meeting with ABC Bank</h5>
+                            <small class="text-muted">20.03.2019</small>
+                        </div>
+                        <p class="mb-1 text-left">On Monday, March 27 at 7:00 pm, we invite you to a besiness meeting with ABC Bank.</p>
+                    </a>
+                </div>
+                <div class="more_news col-12 rounded rounded-lg" onclick="show();">More</div>
+            </div>
+            <div class="col-lg-6 col-md-11 justify-content-center">
+                <div class="col-12"><span class="title2">Rewards</span></div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="attended arr_right">Class attended</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right col-4 text-left p-0"><span class="date arr_left">20.04.2019</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="date arr_right">19.04.2019</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right text-left col-4 p-0"><span class="attended arr_left">Class attended</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="attended arr_right">Class attended</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right col-4 text-left p-0"><span class="date arr_left">18.04.2019</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="date arr_right">17.04.2019</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right text-left col-4 p-0"><span class="attended arr_left">Class attended</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="attended arr_right">Class attended</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right col-4 text-left p-0"><span class="date arr_left">16.04.2019</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="date arr_right">15.04.2019</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right text-left col-4 p-0"><span class="attended arr_left">Class attended</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="attended arr_right">Class attended</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right col-4 text-left p-0"><span class="date arr_left">14.04.2019</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="date arr_right">13.04.2019</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew "></div>
+                    </div>
+                    <div class="rew_right text-left col-4 p-0"><span class="attended arr_left">Class attended</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="rew_left text-right col-4 p-0"><span class="attended arr_right">Class attended</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right col-4 text-left p-0"><span class="date arr_left">12.04.2019</span></div>
+                </div>
+                <div class="row justify-content-center align-items-center" id="hidden_rewards">
+                    <div class="rew_left text-right col-4 p-0"><span class="date arr_right">10.04.2019</span></div>
+                    <div class="d-flex col-3 justify-content-center align-self-center">
+                        <span class="col_rew">+1</span>
+                        <div class="pic_rew"></div>
+                    </div>
+                    <div class="rew_right col-4 text-left p-0"><span class="attended arr_left">Class attended</span></div>
+                </div>            
+              
+
+                <div class="more_news1 col-12 rounded rounded-lg" onclick="show1();">More</div>
+            </div>    
+        </div>
+    </div>
+  
+
+
+
+    <script>
+        function show(){
+            let elem = document.getElementById("hidden_news");
+            elem.style.display == "block" ?
+                elem.style.display = "none" :
+                elem.style.display = "block";
+        }
+        
+        function show1(){
+            let elem = document.getElementById("hidden_rewards");
+            elem.style.display == "flex" ?
+                elem.style.display = "none" :
+                elem.style.display = "flex";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

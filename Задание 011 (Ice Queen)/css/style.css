@@ -1,0 +1,273 @@
+@font-face{
+    font-family: SkySansW01;
+    src: url('../fonts/SkySansW01.ttf');
+}
+
+@font-face{
+    font-family: Burbank;
+    src: url('../fonts/Burbank_Big_Condensed_Black.ttf');
+}
+
+body{
+    width: 1550px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #2A2A2A;
+}
+
+nav{
+    position: relative;
+    display: inline-block;
+    font-family: "SkySansW01";
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 13.5px;
+    color: white;
+    user-select: none;
+    line-height: 80px;
+    z-index: 100;
+}
+
+.block_logo{
+    float: left;
+    line-height: 0px;
+}
+
+.img_logo{
+    margin: 5px 26px;
+    filter: grayscale(100%);
+}
+
+.menu_l{
+    float: left;
+    padding: 0 26px;
+}
+
+.search, .menu_r{
+    float: right;
+    padding: 0 26px;
+}
+
+.logo:hover, .menu_l:hover,
+.search:hover, .menu_r:hover{
+    color: black;
+    background-color: white;
+}
+
+div.main{
+    position: absolute;
+    width: 1550px;
+    height: 864px;
+    background: radial-gradient(#6BD2FD, #009BEE);
+    font-family: Burbank;
+}
+
+section.circle{
+    position: absolute;
+    width: 665px;
+    height: 665px;
+    border-radius: 50%;
+    background-color: #6BD2FD;
+    top: 130px;
+    left: 35%;
+}
+
+img.ice_queen{
+    position: absolute;
+    top: -190px;
+    left: 80px;
+    z-index: 10;
+}
+
+
+
+.name_game{
+    position: absolute;
+    height: 300px;
+    margin: 60px 0 0 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    user-select: none;
+    z-index: 20;
+}
+
+h1{
+    font-size: 210px;
+}
+
+h2{
+    font-size: 70px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+.play_now{
+    position: absolute;
+    width: 410px;
+    height: 90px;
+    top: 360px;
+    left: 175px;
+    background-color: #2A2A2A;
+    color: #009BEE;
+    line-height: 100px;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    user-select: none;
+    z-index: 20;
+    clip-path: polygon(0% 6%, 100% 0%, 99% 95%, 4% 100%);
+}
+
+.play_now:hover{
+        background-color: lightgray;
+}
+
+.site_text_left{
+    position: absolute;
+    width: 470px;
+    height: 140px;
+    top: 560px;
+    margin: 0px 0px 0px 70px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.site_text_left p, .site_text_right p{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.bot_block{
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    top: 700px;
+    margin: 0px 0px 0px 50px;
+}
+
+.bot_block .free{
+    position: absolute;
+    width: 160px;
+    line-height: 80px;
+    background-color: #2A2A2A;
+    color: #009BEE;
+    font-family: Burbank;
+    font-size: 55px;
+    text-align: center;
+    z-index: 20;
+    top: 50px;
+    letter-spacing: 2px;
+    clip-path: polygon(0% 5%, 90% 0%, 99% 95%, 4% 90%);
+}
+
+.free:hover{
+        background-color: lightgray;
+}
+
+
+.bot_block .pvp{
+    position: absolute;
+    width: 380px;
+    height: 110px;
+    padding-right: 25px;
+    background-color: white;
+    color: #009BEE;
+    font-family: Burbank;
+    font-size: 50px;
+    text-align: right;
+    z-index: 10;
+    left: 90px;
+    letter-spacing: 3px;
+    clip-path: polygon(0% 5%, 98% 0%, 100% 100%, 2% 93%);
+}
+
+.pvp p:first-child{
+    color: black;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.site_text_right{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    top: 80px;
+    left: 1110px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.site_text_right i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.list{
+    position: absolute;
+    width: 260px;
+    height: 70px;
+    left: 1220px;
+    top: 400px;
+}
+
+.list div.circle_1{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #6BD2FD;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.list div.circle_2{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #6BD2FD;
+    margin: 7px 7px;
+}
+
+div.circle_1:hover{
+    border: 2px solid white;
+}
+
+div.circle_1:hover .circle_2{
+    background-color: white;
+}
+
+div.arrow{
+    float: right;
+    width: 100px;
+    height: 80px;
+    font-family: Burbank; 
+    color: #009BEE;
+    background-color: #2A2A2A;
+    font-size: 45px;
+    line-height: 95px;
+    text-align: center;
+    clip-path: polygon(0% 15%, 98% 0%, 75% 100%, 15% 90%);
+}
+
+.arrow:hover{
+        background-color: lightgray;
+}
+
+.video{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    left: 1150px;
+    top: 540px;
+    border: 10px solid white;
+}

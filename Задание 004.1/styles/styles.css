@@ -1,0 +1,103 @@
+body{
+    font-family: sans-serif;
+}
+
+h1.title{
+    text-align: center;
+    border-bottom: 1px dashed;
+    border-top: 2px solid;
+}
+/*-------------------- first task -------------------------*/
+
+section.block1{
+    width: 900px;
+    margin: 0 auto;
+}
+
+section.block1 h1{
+    text-align: center;
+    font-size: 35px;
+    color: #483D8B;
+    font-weight: 800;
+}
+
+section.block1 h3{
+    color: #748798;
+    text-align: left;
+}
+
+section.block1 p.normal_text{
+    line-height: 20px;
+}
+
+section.block1 p.kursiv_text{
+    font-style: italic;
+    font-size: 12px
+}
+
+/*-------------------- second task -------------------------*/
+
+section.block2{
+    width: 900px;
+    margin: 50px auto;
+}
+
+section.block2 h1{
+    font-weight: 100;
+}
+
+section.block2 div.table{
+    width: 900px;
+    height: 110px;
+    margin: 20px 0px;
+}
+
+section.block2 div.cards{
+    float: left;
+    width: 130px;
+    height: 90px;
+    background-color: #E0E0E0;
+    margin-right: 10px;
+    font-size: 60px;
+    text-align: center;
+}
+
+section.block2 span{
+    font-size: 70px;
+}
+
+.red{color: darkred;}
+
+/*-------------------- third task -------------------------*/
+
+section.block3{
+    width: 770px;
+    margin: 50px auto;
+}
+
+section.block3 h1,h3{
+    text-align: center;
+    font-weight: 800;
+}
+
+section.block3 span{
+    background-color: #E7E7E7;
+    color: #A22620;
+}
+
+section.block3 div{
+    width: 710px;
+    background-color: #E7E7E7;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+}
+
+section.block3 span.tag{
+    color: darkgreen
+}
+
+pre, code{
+   margin: 0px;
+    padding: 0px;
+}

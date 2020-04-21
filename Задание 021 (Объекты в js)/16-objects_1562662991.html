@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sotula Nick">
+    <meta name="description" content="Step Dnipro HomeWork Web Course->JS">
+    <title>DZ-JS-16</title>
+    <style>
+        body {
+            padding: 15px 20px;
+            font-family: sans-serif;
+        }
+        
+        section {
+            margin: 15px;
+            border-left: 15px solid rgb(166, 194, 166);
+            padding-left: 15px;
+        }
+        
+        code {
+            font-size: 150%;
+            text-shadow: 1px 1px 5px dimgrey;
+        }
+        
+        main {
+            width: 600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        h3{
+            font-size: 150%;
+        }
+        
+        .examples{
+            border-collapse: collapse;
+        }
+        
+        .examples td{
+            border: 1px solid green;
+            padding: 7px;
+        }
+        
+        pre{
+            font-family: cursive;
+        }
+
+        h4{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        h4+p{
+            margin-top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Домашнее задание №16</h1>
+
+        <section>
+            <h3>1 - Драконья стая</h3>
+            <p>Напишите приложение по генерации драконьей стаи. Пользователь вводит количество драконов в стае. Сгенерировать массив объектов со случайными драконами.</p>
+            <ul>
+            	<li>Имя дракона</li>
+            	<li>Локация, откуда прилетел дракон</li>
+            	<li>Пол дракона(М/Ж)</li>
+            	<li>Цвет дракона(7 цветов)</li>
+            	<li>Возраст дракона(100 до 3000)</li>
+            	<li>Головы дракона(1-20)</li>
+            </ul>
+            <h4>Входные данные:</h4>
+            <p>Число - целое число от 1 до 100. Количество драконо в стае.</p>
+            <h4>Выходные данные:</h4>
+            <p>Массив объектов(стая). Суммарная сумма голов дракона, мощь стаи драконов, количество драконов мужского пола и количество драконов женского пола. Информацию по самому молодоу дракону и информацию по самому старому дракону. Среднее количество голов у драконов. </p>
+        </section>
+        <section>
+            <h3>2 - Крестики-нолики. Начало</h3>
+            <p>Создайте веб-приложение, в котором есть двумерный массив 3 на 3 поля, заполненный буквами "Х" и "О". Выведите его в консоль.
+            </p>
+            <h4>Входные данные:</h4>
+            <h4>Выходные данные:</h4>
+            <p>Строка - преобразованный в строку массив</p>
+            <h4>Примеры:</h4>
+            <details>
+                <summary>Развернуть</summary>
+
+                <table class="examples">
+                    <tr>
+                        <td>#</td>
+                        <td>IN</td>
+                        <td>OUT</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td>XOO <br>OOX <br>XXO</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td>XXO <br>OOX <br>OXO</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td>OXO <br>OXO <br>XOX</td>
+                    </tr>
+                </table>
+            </details>
+        </section>
+ <section>
+            <h3>3 - Опять Саймон.</h3>
+            <p>Саймон написал код. Саймон уверен, что код в порядке. Но код не работает. Исправь ошибки, допущенные Саймоном.</p>
+            <h4>Входные данные:</h4>
+            <p>Число - количество символов в генерируемой строке</p>
+            <h4>Выходные данные:</h4>
+            <p>Текст - Случайная строка</p>
+            <h4>Примеры:</h4>
+            <details>
+                <summary>Развернуть</summary>
+                   
+                <table class="examples">
+                    <tr>
+                        <td>#</td>
+                        <td>IN</td>
+                        <td>OUT</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>12</td>
+                        <td>"Random string with length 12 is: cZPhX98!xcV8"</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>"Random string with length 1 is: ("</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>"Хммм"</td>
+                        <td>"Random string with length NaN is: "</td>
+                    </tr>
+                </table>
+            </details>
+            <h4>Код Саймона:</h4>
+            <details>
+                    <summary>Развернуть код</summary>
+            <pre>
+let organs = 'abcdefghijklmnopqrstuvwxyz0123456789_-!@#$%^&*()',
+		orgLen = organs.len,
+		len = parseInt(prompt('Enter a len of string')),
+		answ = '',
+		char = '';
+
+for(let i = 0; i < len; i++){
+	char = organs[Math.floor(Math.random() * orgLen)];
+	if(Math.random() > 0,5){
+		char = char.toLowerCase();
+	}
+	answ += char;
+}
+
+console.log("Random string with length " + len + " is: " + answ);
+            </pre>
+            </details>
+        </section>
+        <h3>Формат работы</h3>
+        <ul>
+            <li>Файлы  с первым заданием - <ins>dragons.html</ins>  <ins>dragons.js</ins></li>
+            <li>Файлы со вторым заданием - <ins>xo.html</ins>  <ins>xo.js</ins></li>
+            <li>Файлы со третим заданием - <ins>simon.html</ins>  <ins>simonApp.js</ins></li>
+        </ul>
+    </main>
+</body>
+
+</html>

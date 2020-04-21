@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание №27 (Bootstrap)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://kit.fontawesome.com/dce1808605.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <a href="index.html" class="navbar-brand">
+            <i class="fas fa-chalkboard-teacher" style="font-size: 45px;"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="homework.html" class="nav-link">Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a href="setting.html" class="nav-link">Setting</a>
+                </li>
+            </ul>
+            <a href="setting.html"><div class="avatar"></div></a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row border-bottom mr-5 ml-5">
+            <div class="col-4 text-left align-self-end mb-2"><span class="title_js">JavaScript</span></div>
+            <div class="col-4 text-center mb-4"><span class="title_h">Homework</span></div>
+            <div class="col-4 text-right mt-4 mb-2">
+                <div>current - <div class="cir rounded-circle d-inline-block" style="background-color: #F5F5F5;"></div></div>
+                <div>reviewed - <div class="cir rounded-circle d-inline-block" style="background-color: #6FD084;"></div></div>
+                <div>under review - <div class="cir rounded-circle d-inline-block" style="background-color: #37B0C1;"></div></div>
+                <div>overdue - <div class="cir rounded-circle d-inline-block" style="background-color: #F98691;"></div></div>
+            </div>                    
+        </div>
+        <div class="row mr-5 ml-5 mt-3 justify-content-between">
+            <div class="card w-32 mt-3"  style="background-color: #F5F5F5;">
+                <div class="card-body">
+                    <h5 class="card-title">Loops</h5>
+                    <p class="card-text">10/05/2019</p>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFileLang">
+                        <label class="custom-file-label" for="customFileLang">Choose file</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-32 mt-3" style="background-color: #37B0C1;">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Conditional statements</h5>
+                    <p class="card-text">8/05/2019</p>
+                    <div class="btn-group w-100" role="group" aria-label="Basic example">
+                        <button type="button" class="btn border border-white text-white"><div></div><i class="fas fa-download"></i>&nbsp;&nbsp;Your file</button>
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-32 mt-3" style="background-color: #37B0C1;">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Variables</h5>
+                    <p class="card-text">5/05/2019</p>
+                    <div class="btn-group w-100" role="group" aria-label="Basic example">
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-download"></i>&nbsp;&nbsp;Your file</button>
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row border-bottom mr-5 ml-5 mt-5">
+            <div class="col-12 text-left align-self-end mb-2"><span class="title_js">HTML & CSS</span></div>
+        </div>
+        <div class="row mr-5 ml-5 mt-2 justify-content-between">
+            <div class="card w-32 mt-3"  style="background-color: #F98691;">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Adaptive layout</h5>
+                    <p class="card-text">29/04/2019</p>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFileLang">
+                        <label class="custom-file-label" for="customFileLang">Choose file</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-32 mt-3" style="background-color: #F98691;">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Grid layout</h5>
+                    <p class="card-text">27/04/2019</p>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFileLang">
+                        <label class="custom-file-label" for="customFileLang">Choose file</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-32 mt-3" style="background-color: #6FD084;">
+                <div class="card-body text-white">
+                    <span class="badge badge-success badge-pill float-right">11</span>
+                    <h5 class="card-title">Flexbox</h5>
+                    <p class="card-text">24/04/2019</p>
+                    <div class="btn-group w-100" role="group" aria-label="Basic example">
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-download"></i>&nbsp;&nbsp;Your file</button>
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-redo"></i>&nbsp;&nbsp;Resend</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-32 mt-3" style="background-color: #6FD084;">
+                <div class="card-body text-white">
+                    <span class="badge badge-success badge-pill float-right">10</span>
+                    <h5 class="card-title">Animations</h5>
+                    <p class="card-text">20/04/2019</p>
+                    <div class="btn-group w-100" role="group" aria-label="Basic example">
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-download"></i>&nbsp;&nbsp;Your file</button>
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-redo"></i>&nbsp;&nbsp;Resend</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-32 mt-3" style="background-color: #6FD084;">
+                <div class="card-body text-white">
+                    <span class="badge badge-success badge-pill float-right">10</span>
+                    <h5 class="card-title">Froms</h5>
+                    <p class="card-text">18/04/2019</p>
+                    <div class="btn-group w-100" role="group" aria-label="Basic example">
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-download"></i>&nbsp;&nbsp;Your file</button>
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-redo"></i>&nbsp;&nbsp;Resend</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-32 mt-3" style="background-color: #6FD084;">
+                <div class="card-body text-white">
+                    <span class="badge badge-success badge-pill float-right">12</span>
+                    <h5 class="card-title">Tables</h5>
+                    <p class="card-text">17/04/2019</p>
+                    <div class="btn-group w-100" role="group" aria-label="Basic example">
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-download"></i>&nbsp;&nbsp;Your file</button>
+                        <button type="button" class="btn border border-white text-white"><i class="fas fa-redo"></i>&nbsp;&nbsp;Resend</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

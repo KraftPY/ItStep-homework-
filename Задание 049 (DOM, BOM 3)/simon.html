@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .blocs> div{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" class="in">
+    <div class="blocs"> </div>
+
+    <script>
+        document.querySelector('.in').addEventListener('keyup', function(ev){
+            let  blocs = document.querySelector('.blocs'), //querySelectorAll
+                 count = parseInt(ev.target.value); // ev.target.innerHTML
+            
+
+            
+            while(blocs.firstChild){
+                blocs.removeChild(blocs.firstChild);
+            }													
+
+            while(count--){ // ++
+                blocs.appendChild(document.createElement('div'));
+            }			
+       });
+   </script>
+</body>
+</html>

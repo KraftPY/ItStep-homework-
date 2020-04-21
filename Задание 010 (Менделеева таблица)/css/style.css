@@ -1,0 +1,92 @@
+body{
+    width: 1600px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+td{
+    width: 80px;
+    height: 100px;
+    border: 1px solid white;
+    text-align: center;
+    z-index: 100;
+}
+
+p{
+    margin: 0;
+}
+
+p.num{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.name{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+p.name_ru{
+    font-size: 11px;
+}
+
+div.line{
+    display: block;
+}
+
+div.ico{
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+td.no_metal, td.metal{
+    text-align: left;   
+}
+
+p.title{
+    margin: 10px 0 5px 25px;
+    font-weight: bolder;
+}
+
+.metalloidy{background-color: #02BCA2;}
+.any_metal{background-color: #FA8B4D;}
+.galogeny{background-color: #CD9EB5;}
+.blag_gas{background-color: #00A8DC;}
+.shel_metal{background-color: #4691CA;}
+.shel_zem__metal{background-color: #E7C3A8;}
+.lantoidy{background-color: #DE50B4;}
+.aktinoidy{background-color: #FF7B8C;}
+.perehod_metal{background-color: #F7D703;}
+.postperehod_metal{background-color: #B7BD7B;}
+.any{background-color: #D9DDE0;}
+
+td.metalloidy:hover, td.any_metal:hover,
+td.galogeny:hover, td.blag_gas:hover,
+td.shel_metal:hover, td.shel_zem__metal:hover,
+td.lantoidy:hover, td.aktinoidy:hover,
+td.perehod_metal:hover, td.postperehod_metal:hover,
+td.any:hover{
+    transform: scale(1.5);
+    border: 1px solid black;
+    z-index: 10;
+}
+
+div.text{
+    padding: 0px 0px 0px 0px;
+    margin-top: 50px;
+    width: 330px;
+    height: 190px;
+    text-align: left;
+    float: left;
+}
+
+div.text h3{
+    margin: 0;
+}
+
+.tab2{
+    margin: 80px 0px 80px 0px;
+    float: left;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home work №20. Forms and frames</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/jquery-3.4.1.js"></script>
+    <script src="scripts/jquery.maskedinput.js"></script>
+</head>
+<body>
+    <h1><a href="task2.html">Задание №2 &gt;&gt;&gt; |</a><a href="task3.html">| Задание №3 &gt;&gt;&gt;</a></h1>
+    <form action="">
+        <div class="card_title">CREDIT CARD DETAILS</div>
+        <div class="card_data">
+            <p>Card Number</p>
+            <input id="num_card" type="text" name="num_card" placeholder="1234 5678 9012 3456">
+            <p>Name On Card</p>
+            <input type="text" name="name" id="name" placeholder="Name Surname">
+            <div class="date">
+                <div>
+                    <p>Expiry Date</p>
+                    <input type="text" name="" id="month" placeholder="02">
+                </div>
+                <div>
+                    <input type="text" name="" id="year" placeholder="2017">
+                </div>
+                <div>
+                    <p>CVV / CVN</p>
+                    <input type="password" name="" id="CVV" placeholder="***">
+                </div>
+            </div>
+            <!-- <button type="submit">Отправить</button> -->
+        </div>
+    </form>
+
+    <script>
+        $(function() {
+           $("#num_card").mask("9999 9999 9999 9999");
+           $("#month").mask("99");
+           $("#year").mask("9999");
+           $("#CVV").mask("999");
+        });
+    
+    </script>
+</body>
+</html>
